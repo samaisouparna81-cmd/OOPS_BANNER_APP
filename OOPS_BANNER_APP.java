@@ -1,0 +1,28 @@
+/**
+ * OOPSBannerApp
+ * 
+ * UC4: Display "OOPS" banner using String array and loop
+ * to improve modularity, reusability and maintainability.
+ * 
+ * @author Souparna
+ * @version 4.0
+ */
+public class OOPSBannerApp {
+
+    public static void main(String[] args) {
+
+        String[] banner = {
+                String.join("   ", " ***** ", " ***** ", " ***** ", " ***** "),
+                String.join("   ", "*     *", "*     *", "*     *", "*     *"),
+                String.join("   ", "*     *", "*     *", "*     *", "*     *"),
+                String.join("   ", "*     *", "*     *", " ***** ", " ***** "),
+                String.join("   ", "*     *", "*     *", "*      ", "      *"),
+                String.join("   ", "*     *", "*     *", "*      ", "      *"),
+                String.join("   ", " ***** ", " ***** ", "*      ", " ***** ")
+        };
+
+        for (String line : banner) {
+            System.out.println(line);
+        }
+    }
+}
